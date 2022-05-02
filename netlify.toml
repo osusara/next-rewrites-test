@@ -1,4 +1,4 @@
 [build]
-  command = "printf "$NETLIFY_REDIRECT" > public/_redirects && next build"
+  command = "printf "$REWRITE_RULE" > public/_redirects && next build"
   publish = ".next"
 
